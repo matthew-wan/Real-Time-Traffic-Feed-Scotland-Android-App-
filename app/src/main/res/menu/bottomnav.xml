@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Name: Chun Ting Matthew Wan, Matric Number: S16253  -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottomnav_currentincidents"
+        android:title="Current Incidents"
+        android:icon="@drawable/ic_warning_black_24dp"
+        />
+
+    <item
+        android:id="@+id/bottomnav_roadworks"
+        android:title="Roadworks"
+        android:icon="@drawable/ic_fix_24dp"
+        />
+
+    <item
+        android:id="@+id/bottomnav_plannedroadworks"
+        android:title="Planned Roadwork"
+        android:icon="@drawable/ic_plan_24dp"
+        />
+
+
+</menu>

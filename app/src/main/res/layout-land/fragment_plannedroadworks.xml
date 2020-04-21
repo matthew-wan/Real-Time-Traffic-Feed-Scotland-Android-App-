@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Name: Chun Ting Matthew Wan, Matric Number: S16253  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/plannedMatric"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Matric Number: S1625394     " />
+
+            <TextView
+                android:id="@+id/plannedDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="End Date: " />
+
+            <TextView
+                android:id="@+id/plannedShort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Less than a Week, "
+                android:textColor="#1AFF00" />
+
+            <TextView
+                android:id="@+id/plannedMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Less than a Month, "
+                android:textColor="#FFEC00" />
+
+            <TextView
+                android:id="@+id/plannedLong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1 Month+"
+                android:textColor="#FF0000" />
+
+            <EditText
+                android:id="@+id/plannedLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Filter Location"
+                android:inputType="textPersonName"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/from_plannedroadworks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="From Date" />
+
+            <Button
+                android:id="@+id/to_plannedroadworks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/from_plannedroadworks"
+                android:layout_weight="1.0"
+                android:text="To Date" />
+
+            <Button
+                android:id="@+id/search_plannedroadworks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/to_plannedroadworks"
+                android:layout_weight="1.0"
+                android:text="SEARCH" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/plannedroadworks_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
